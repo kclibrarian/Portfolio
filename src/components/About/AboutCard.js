@@ -13,11 +13,14 @@ function AboutCard() {
             <br />
             Proactive and detail-oriented Software Engineer with 3 years of
             experience designing, building, and optimizing scalable web
-            applications using TypeScript, React, and AWS. 
+            applications using TypeScript, React, and AWS.
             <br />
-            Skilled in collaborating with diverse teams to deliver efficient and user-centric solutions. 
+            Skilled in collaborating with diverse teams to deliver efficient and
+            user-centric solutions.
             <br />
-            Demonstrates expertise in modern development practices, performance tuning, and delivering high-quality software products within Agile frameworks.
+            Demonstrates expertise in modern development practices, performance
+            tuning, and delivering high-quality software products within Agile
+            frameworks.
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
@@ -34,7 +37,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Build things people don't have to ask questions about!"{" "}
           </p>
           <footer className="blockquote-footer">Lasswell</footer>
         </blockquote>

@@ -40,7 +40,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/Portfolio" className="d-flex">
+        <Navbar.Brand href="/" className="d-flex">
           <SiCoderwall alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -56,15 +56,10 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/Portfolio"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -74,7 +69,18 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/catfact"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Need a Cat Fact?
+              </Nav.Link>
+            </Nav.Item>
             {/* 
             //TODO: Add projects
             // <Nav.Item>
@@ -89,7 +95,6 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item> */}
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -99,7 +104,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/kcLibrarian/Portfolio"
